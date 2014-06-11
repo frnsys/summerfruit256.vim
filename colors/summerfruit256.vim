@@ -273,10 +273,17 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
     " Markdown Highlighting
 	call <SID>X("markdownH1", "fc6020", "", "none")
-	call <SID>X("markdownListMarker", "fc6020", "", "none")
 	call <SID>X("markdownHeadingRule", "fc6020", "", "none")
-	call <SID>X("markdownBold", "fc6020", "", "none")
-	call <SID>X("markdownItalic", "fc6020", "", "none")
+	call <SID>X("markdownBold", "ff0086", "", "none")
+	call <SID>X("markdownItalic", "ff0086", "", "none")
+	call <SID>X("markdownListMarker", "ff0086", "", "none")
+	call <SID>X("markdownOrderedListMarker", "ff0086", "", "none")
+    call <SID>X("markdownBlockquote", "2296d8", "", "none")
+    call <SID>X("markdownUrl", "2296d8", "", "none")
+    call <SID>X("markdownLink", "2296d8", "", "none")
+    call <SID>X("markdownCode", "2296d8", "", "none")
+    call <SID>X("markdownFootnote", "2296d8", "", "none")
+    call <SID>X("markdownFootnoteDefinition", "2296d8", "", "none")
 
     " Python Highlighting
     call <SID>X("pythonCoding", "ff0086", "", "")
